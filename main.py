@@ -36,7 +36,7 @@ def gerarSenha():
                       't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
                       'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
             numeros = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
-            simbolos = ['!', '@', '#', '$', '%', '&']
+            simbolos = ['!', '@', '#', '$', '%', '&', '+', '=', ']', '[', '>', '<', ')', '(', '=', '-', '/', '*', '}', '{']
             '''
             1 - numeros
             2 - letras
@@ -60,7 +60,7 @@ def gerarSenha():
     elif selecionadoSimbolos.get() == 1 and selecionadoNumeros.get() == 1 and selecionadoLetras.get() == 0:
         while len(senhaGerada) < quantidadeDeCaracteres:
             numeros = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
-            simbolos = ['!', '@', '#', '$', '%', '&']
+            simbolos = ['!', '@', '#', '$', '%', '&', '+', '=', ']', '[', '>', '<', ')', '(', '=', '-', '/', '*', '}', '{']
             '''
             1 - numeros
             2 - simbolos
@@ -83,7 +83,7 @@ def gerarSenha():
             letras = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
                       't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
                       'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-            simbolos = ['!', '@', '#', '$', '%', '&']
+            simbolos = ['!', '@', '#', '$', '%', '&', '+', '=', ']', '[', '>', '<', ')', '(', '=', '-', '/', '*', '}', '{']
             '''
             1 - letras
             2 - simbolos
@@ -157,10 +157,7 @@ def gerarSenha():
     # Apenas símbolos:
     elif selecionadoSimbolos.get() == 1 and selecionadoNumeros.get() == 0 and selecionadoLetras.get() == 0:
         while len(senhaGerada) < quantidadeDeCaracteres:
-            letras = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
-                      't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
-                      'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-            simbolos = ['!', '@', '#', '$', '%', '&']
+            simbolos = ['!', '@', '#', '$', '%', '&', '+', '=', ']', '[', '>', '<', ')', '(', '=', '-', '/', '*', '}', '{']
             '''
             1 - simbolos
             '''
