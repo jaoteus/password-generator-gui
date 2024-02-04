@@ -5,7 +5,7 @@ from tkinter import messagebox
 # Configurações da janela:
 janelaPrincipal = Tk()
 janelaPrincipal.resizable(False, False)
-janelaPrincipal.title("PG")
+janelaPrincipal.title("Password Generator")
 
 # variavéis
 quantidadeDeCaracteres = "0"
@@ -171,6 +171,8 @@ def gerarSenha():
                 senhaGerada = senhaGerada + algarismoAleatorio
             localDaSenhaGerada.delete(1.0, END)
             localDaSenhaGerada.insert(END, senhaGerada)
+    else:
+        messagebox.showerror(title="ERROR", message="VOCÊ PRECISA SELECIONAR AO MENOS 1 OPÇÃO!")
 
 # LABELS
 labelQuantidadeDeCaracteres = Label(janelaPrincipal, text="Quantidade de caracteres:")
