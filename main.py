@@ -181,7 +181,7 @@ localParaColocarQuantidadeDeCaracteres.grid(row=0, column=1, padx=10, pady=10)
 
 # BOTÕES
 botaoGerarSenha = Button(janelaPrincipal, text="Gerar senha", command=gerarSenha)
-botaoGerarSenha.grid(row=4, column=0, padx=10, pady=10, columnspan=2)
+botaoGerarSenha.grid(row=4, column=0, padx=0, pady=10, columnspan=2)
 
 # TEXTOS
 localDaSenhaGerada = Text(janelaPrincipal,state="normal", width=30,height=2) # DEPOIS MUDAR PARA NORMAL
@@ -189,13 +189,13 @@ localDaSenhaGerada.grid(row=5, column=0, padx=10, pady=10, columnspan=2)
 
 # CHECK BUTTONS
 checkButtonOpcaoNumeros = Checkbutton(janelaPrincipal, text="Adicionar números", variable=selecionadoNumeros)
-checkButtonOpcaoNumeros.grid(row=1, column=0, padx=0, pady=0, columnspan=1)
+checkButtonOpcaoNumeros.grid(row=1, column=0, padx=0, pady=0)
 
-checkButtonOpcaoLetras = Checkbutton(janelaPrincipal, text="Adicionar letras", variable=selecionadoLetras)
-checkButtonOpcaoLetras.grid(row=2, column=0, padx=0, pady=0, columnspan=1)
+checkButtonOpcaoLetras = Checkbutton(janelaPrincipal, text="Adicionar letrasﾠﾠﾠ", variable=selecionadoLetras)
+checkButtonOpcaoLetras.grid(row=2, column=0, padx=0, pady=0)
 
 checkButtonOpcaoSimbolos = Checkbutton(janelaPrincipal, text="Adicionar símbolos", variable=selecionadoSimbolos)
-checkButtonOpcaoSimbolos.grid(row=3, column=0, padx=0, pady=0, columnspan=1)
+checkButtonOpcaoSimbolos.grid(row=3, column=0, padx=0, pady=0)
 
 # Loop da janela
 janelaPrincipal.mainloop()
