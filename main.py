@@ -14,6 +14,7 @@ selecionadoLetras = IntVar()
 selecionadoNumeros = IntVar()
 selecionadoSimbolos = IntVar()
 
+
 # Funções:
 def gerarSenha():
     global senhaGerada, selecionadoLetras, selecionadoSimbolos, selecionadoNumeros
@@ -36,7 +37,8 @@ def gerarSenha():
                       't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
                       'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
             numeros = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
-            simbolos = ['!', '@', '#', '$', '%', '&', '+', '=', ']', '[', '>', '<', ')', '(', '=', '-', '/', '*', '}', '{']
+            simbolos = ['!', '@', '#', '$', '%', '&', '+', '=', ']', '[', '>', '<', ')', '(', '=', '-', '/', '*', '}',
+                        '{']
             '''
             1 - numeros
             2 - letras
@@ -60,7 +62,8 @@ def gerarSenha():
     elif selecionadoSimbolos.get() == 1 and selecionadoNumeros.get() == 1 and selecionadoLetras.get() == 0:
         while len(senhaGerada) < quantidadeDeCaracteres:
             numeros = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
-            simbolos = ['!', '@', '#', '$', '%', '&', '+', '=', ']', '[', '>', '<', ')', '(', '=', '-', '/', '*', '}', '{']
+            simbolos = ['!', '@', '#', '$', '%', '&', '+', '=', ']', '[', '>', '<', ')', '(', '=', '-', '/', '*', '}',
+                        '{']
             '''
             1 - numeros
             2 - simbolos
@@ -83,7 +86,8 @@ def gerarSenha():
             letras = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
                       't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
                       'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-            simbolos = ['!', '@', '#', '$', '%', '&', '+', '=', ']', '[', '>', '<', ')', '(', '=', '-', '/', '*', '}', '{']
+            simbolos = ['!', '@', '#', '$', '%', '&', '+', '=', ']', '[', '>', '<', ')', '(', '=', '-', '/', '*', '}',
+                        '{']
             '''
             1 - letras
             2 - simbolos
@@ -157,7 +161,8 @@ def gerarSenha():
     # Apenas símbolos:
     elif selecionadoSimbolos.get() == 1 and selecionadoNumeros.get() == 0 and selecionadoLetras.get() == 0:
         while len(senhaGerada) < quantidadeDeCaracteres:
-            simbolos = ['!', '@', '#', '$', '%', '&', '+', '=', ']', '[', '>', '<', ')', '(', '=', '-', '/', '*', '}', '{']
+            simbolos = ['!', '@', '#', '$', '%', '&', '+', '=', ']', '[', '>', '<', ')', '(', '=', '-', '/', '*', '}',
+                        '{']
             '''
             1 - simbolos
             '''
@@ -170,6 +175,7 @@ def gerarSenha():
             localDaSenhaGerada.insert(END, senhaGerada)
     else:
         messagebox.showerror(title="ERROR", message="VOCÊ PRECISA SELECIONAR AO MENOS 1 OPÇÃO!")
+
 
 # LABELS
 labelQuantidadeDeCaracteres = Label(janelaPrincipal, text="Quantidade de caracteres:")
@@ -184,7 +190,7 @@ botaoGerarSenha = Button(janelaPrincipal, text="Gerar senha", command=gerarSenha
 botaoGerarSenha.grid(row=4, column=0, padx=0, pady=6, columnspan=2)
 
 # TEXTOS
-localDaSenhaGerada = Text(janelaPrincipal,state="normal", width=30,height=2) # DEPOIS MUDAR PARA NORMAL
+localDaSenhaGerada = Text(janelaPrincipal, state="normal", width=30, height=2)  # DEPOIS MUDAR PARA NORMAL
 localDaSenhaGerada.grid(row=5, column=0, padx=10, pady=10, columnspan=2)
 
 # CHECK BUTTONS
