@@ -181,7 +181,7 @@ localParaColocarQuantidadeDeCaracteres.grid(row=0, column=1, padx=10, pady=10)
 
 # BOTÕES
 botaoGerarSenha = Button(janelaPrincipal, text="Gerar senha", command=gerarSenha)
-botaoGerarSenha.grid(row=4, column=0, padx=0, pady=10, columnspan=2)
+botaoGerarSenha.grid(row=4, column=0, padx=0, pady=6, columnspan=2)
 
 # TEXTOS
 localDaSenhaGerada = Text(janelaPrincipal,state="normal", width=30,height=2) # DEPOIS MUDAR PARA NORMAL
