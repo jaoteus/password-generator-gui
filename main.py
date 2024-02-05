@@ -177,13 +177,16 @@ def gerarSenha():
         messagebox.showerror(title="ERROR", message="VOCÊ PRECISA SELECIONAR AO MENOS 1 OPÇÃO!")
 
 
+# ----------------------------------------------------
 # LABELS
 labelQuantidadeDeCaracteres = Label(janelaPrincipal, text="Quantidade de caracteres:")
-labelQuantidadeDeCaracteres.grid(row=0, column=0, padx=10, pady=10, sticky="W")
+labelQuantidadeDeCaracteres.grid(row=0, column=0, padx=10, pady=10, sticky="W")  # trocado o "column" por "sticky"
 
 # ENTRADAS
 localParaColocarQuantidadeDeCaracteres = Entry(janelaPrincipal, width=5)
-localParaColocarQuantidadeDeCaracteres.grid(row=0, column=0, padx=10, pady=10, sticky="SE")
+localParaColocarQuantidadeDeCaracteres.grid(row=0, column=0, padx=10, pady=10, sticky="SE")  # trocado o "column" por
+# "sticky"
+# ----------------------------------------------------
 
 # BOTÕES
 botaoGerarSenha = Button(janelaPrincipal, text="Gerar senha", command=gerarSenha)
