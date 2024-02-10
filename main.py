@@ -184,7 +184,7 @@ labelQuantidadeDeCaracteres.grid(row=0, column=0, padx=10, pady=10, sticky="W") 
 
 # ENTRADAS
 localParaColocarQuantidadeDeCaracteres = Entry(janelaPrincipal, width=5)
-localParaColocarQuantidadeDeCaracteres.grid(row=0, column=0, padx=10, pady=10, sticky="SE")  # trocado o "column" por
+localParaColocarQuantidadeDeCaracteres.grid(row=0, column=1, padx=10, pady=10, sticky="SE")  # trocado o "column" por
 # "sticky"
 # ----------------------------------------------------
 
@@ -200,7 +200,7 @@ localDaSenhaGerada.grid(row=5, column=0, padx=10, pady=10, columnspan=2)
 checkButtonOpcaoNumeros = Checkbutton(janelaPrincipal, text="Adicionar números", variable=selecionadoNumeros)
 checkButtonOpcaoNumeros.grid(row=1, column=0, padx=0, pady=0)
 
-checkButtonOpcaoLetras = Checkbutton(janelaPrincipal, text="Adicionar letrasﾠﾠﾠ", variable=selecionadoLetras)
+checkButtonOpcaoLetras = Checkbutton(janelaPrincipal, text="Adicionar letrasﾠﾠ", variable=selecionadoLetras)
 checkButtonOpcaoLetras.grid(row=2, column=0, padx=0, pady=0)
 
 checkButtonOpcaoSimbolos = Checkbutton(janelaPrincipal, text="Adicionar símbolos", variable=selecionadoSimbolos)
